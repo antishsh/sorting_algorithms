@@ -33,4 +33,7 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
+void bitonic_sort(int *array, size_t size);
+void bitonic_recursion(int *array, int l, int r, int direction, size_t size);
+void bitonic_merge(int *array, int l, int r, int direction);
 #endif
