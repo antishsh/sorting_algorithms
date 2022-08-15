@@ -12,12 +12,12 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- *  * recursive_quick_sort - recursive part
- *   * @array: array to use
- *    * @size: size
- *     * @start: start index
- *      * @end: end index
- *      */
+ * recursive_quick_sort - recursive part
+ * @array: array to use
+ * @size: size
+ * @start: start index
+ * @end: end index
+ */
 void recursive_quick_sort(int *array, size_t size, int start, int end)
 {
 	int p;
@@ -31,13 +31,13 @@ void recursive_quick_sort(int *array, size_t size, int start, int end)
 }
 
 /**
- *  * partition - partition the array
- *   * @array: array to use
- *    * @size: size
- *     * @start: start index
- *      * @end: end index
- *       * Return: partition index
- *       */
+ * partition - partition the array
+ * @array: array to use
+ * @size: size
+ * @start: start index
+ * @end: end index
+ * Return: partition index
+ */
 size_t partition(int *array, size_t size, int start, int end)
 {
 	int pivot = array[end];
@@ -59,11 +59,11 @@ size_t partition(int *array, size_t size, int start, int end)
 }
 
 /**
- *  * swap_int1 - swap variable values
- *   * @array: array to use
- *    * @a: index 1
- *     * @b: index 2
- *     */
+ * swap_int1 - swap variable values
+ * @array: array to use
+ * @a: index 1
+ * @b: index 2
+ */
 void swap_int1(int *array, int a, int b)
 {
 	int tmp;
