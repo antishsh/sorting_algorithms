@@ -1,6 +1,7 @@
 #include "sort.h"
 int hoare(int *array, int left, int right, size_t size);
 void Qsort(int *array, int left, int right, size_t size);
+void change(int *array, int *left, int *right, size_t size);
 /**
  * quick_sort_hoare - Sorts an array in ascending order
  * @array: Array
@@ -53,7 +54,6 @@ int hoare(int *array, int left, int right, size_t size)
 {
 	int pivot = array[right];
 	int i = left - 1, j = right + 1;
-	int *temp;
 
 	while (i < (int)size)
 	{
@@ -63,15 +63,29 @@ int hoare(int *array, int left, int right, size_t size)
 			;
 		if (i >= j)
 			break;
-
-		if (left != right)
-		{
-			temp = *left;
-			*left = *right;
-			*right = temp;
-			print_array(array, size);
-		}
+		swap(array, &array[i], &array[j], size);
 	}
 	return (i);
 }
 
+/**
+ * swap - Swaps two int values
+ * @array: the integer array to sort
+ * @left: address of first value
+ * @right: address of second value
+ * @size: the size of the array
+ *
+ * Return: Void
+ */
+void change(int *array, int *left, int *right, size_t size)
+{
+	int temp;
+
+	if (left != right)
+	{
+		temp = *left;
+		*left = *right;
+		*right = temp;
+		print_array(array, size);
+	}
+}
