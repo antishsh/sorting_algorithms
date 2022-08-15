@@ -1,9 +1,9 @@
 #include "sort.h"
 #include <stdio.h>
 /**
- *  * insertion_sort_list - insertion sort algorithm for doubly linked list
- *   * @list: pointer to array to sort
- *   */
+ * insertion_sort_list - insertion sort algorithm for doubly linked list
+ * @list: pointer to array to sort
+ */
 void insertion_sort_list(listint_t **list)
 {
 

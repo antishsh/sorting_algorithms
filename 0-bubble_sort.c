@@ -1,10 +1,10 @@
 include "sort.h"
 
 	/**
-	 *  * bubble_sort - bubble sort algorithm
-	 *   * @array: pointer to array to sort
-	 *    * @size: number of elements
-	 *    */
+	 * bubble_sort - bubble sort algorithm
+	 * @array: pointer to array to sort
+	 * @size: number of elements
+	 */
 	void
 	bubble_sort(int *array, size_t size)
 {
@@ -12,8 +12,7 @@ include "sort.h"
 	short int swapped;
 	int tmp;
 
-	do
-	{
+	do{
 		swapped = 0;
 		for (i = 1; i < size; i++)
 		{
