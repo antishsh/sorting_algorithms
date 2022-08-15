@@ -20,7 +20,7 @@ void quick_sort(int *array, size_t size)
  */
 void recursive_quick_sort(int *array, size_t size, int start, int end)
 {
-	int p;
+	int p; 
 	if (start < end)
 	{
 		p = partition(array, size, start, end);
@@ -67,7 +67,7 @@ size_t partition(int *array, size_t size, int start, int end)
 void swap_int1(int *array, int a, int b)
 {
 	int tmp;
-	tmp = array[a];
+	tmp = array[a]; 
 	array[a] = array[b];
 	array[b] = tmp;
 }
