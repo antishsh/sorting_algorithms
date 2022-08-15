@@ -69,7 +69,7 @@ int hoare(int *array, int left, int right, size_t size)
 }
 
 /**
- * swap - Swaps two int values
+ * change - Swaps two int values
  * @array: the integer array to sort
  * @left: address of first value
  * @right: address of second value
