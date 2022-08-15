@@ -19,12 +19,12 @@ void quick_sort(int *array, size_t size)
 	}
 }
 /**
-* divide - recursively partition
-* @beg: beginning of divided array
-* @pivot: end of divided array
-* @i: the beginning of the array
-* @size: size of array
-*/
+ * divide - recursively partition
+ * @beg: beginning of divided array
+ * @pivot: end of divided array
+ * @i: the beginning of the array
+ * @size: size of array
+ */
 void divide(int beg, int pivot, int *i, size_t size)
 {
 	int first, second, np;
@@ -41,13 +41,13 @@ void divide(int beg, int pivot, int *i, size_t size)
 	}
 }
 /**
-* partition - divides an array
-* @beg: beginning of array separated
-* @pivot: end of array separated
-* @i: the beginning of array
-* @size: size of array
-* Return: the new beginning
-*/
+ * partition - divides an array
+ * @beg: beginning of array separated
+ * @pivot: end of array separated
+ * @i: the beginning of array
+ * @size: size of array
+ * Return: the new beginning
+ */
 int partition(int beg, int pivot, int *i, size_t size)
 {
 	int temp;
@@ -81,10 +81,10 @@ int partition(int beg, int pivot, int *i, size_t size)
 }
 
 /**
-  * swap_int - swaps the values of two integers
-  * @a: take an int
-  * @b: take an int
-  */
+ * swap_int - swaps the values of two integers
+ * @a: take an int
+ * @b: take an int
+ */
 void swap_int(int *a, int *b)
 {
 	int temp;
