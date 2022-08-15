@@ -1,39 +1,36 @@
 #include "sort.h"
-
 /**
- * shell_sort - sort algorithm
- * @array: array to sort
+ * shell_sort -Sort an array using shell_sort algorithm
+ * @array: array
  * @size: size of the array
+ * Return: NULL
  */
 void shell_sort(int *array, size_t size)
 {
-	int inner, outer;
-	int valueToInsert;
-	int interval = 1;
-	int i = 0;
+	unsigned int gap = 1, i, j;
+	int temp;
 
-	while (interval <= (int)size / 3)
-		interval = interval * 3 + 1;
+	if (array == NULL)
+		return;
+	if (size < 2)
+		return;
+	while (gap < size / 3)
+		gap = gap * 3 + 1;
 
-	while (interval > 0)
+	while (gap > 0)
 	{
-
-		for (outer = interval; outer < (int)size; outer++)
+		for (i = gap; i < size; i++)
 		{
-			valueToInsert = array[outer];
-			inner = outer;
-
-			while (inner > interval - 1 && array[inner - interval] >= valueToInsert)
+			temp = array[i];
+			j = i;
+			while (j >= gap && array[j - gap] > temp)
 			{
-				array[inner] = array[inner - interval];
-				inner -= interval;
+				array[j] = array[j - gap];
+				j -= gap;
 			}
-
-			array[inner] = valueToInsert;
+			array[j] = temp;
 		}
-
-		interval = (interval - 1) / 3;
 		print_array(array, size);
-		i++;
+		gap /= 3;
 	}
 }
