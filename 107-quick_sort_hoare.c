@@ -1,5 +1,6 @@
 #include "sort.h"
 int hoare(int *array, int left, int right, size_t size);
+void Qsort(int *array, int left, int right, size_t size);
 /**
  * quick_sort_hoare - Sorts an array in ascending order
  * @array: Array
