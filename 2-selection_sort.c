@@ -6,26 +6,27 @@
  * using the Selection sort algorithm
  * @array: pointer to the array
  * @size: size of the array
- */
+*/
 void selection_sort(int *array, size_t size)
 {
 
-	size_t i, j, jMin;
+size_t i, j, jMin;
 
-	for (i = 0; i <= size; i++)
+for (i = 0; i <= size; i++)
+{
+	jMin = i; /*consider the first element as min*/
+	for (j = i + 1; j < size; j++)
 	{
-		jMin = i; /*consider the first element as min*/
-		for (j = i + 1; j < size; j++)
-		{
-			if (array[j] < array[jMin])
-				jMin = j;
-		}
-		if (jMin != i)
-		{
-			swap_int(array, i, jMin);
-			print_array(array, size);
-		}
+		if (array[j] < array[jMin])
+			jMin = j;
 	}
+	if (jMin != i)
+	{
+		swap_int(array, i, jMin);
+		print_array(array, size);
+	}
+}
+
 }
 
 /**
@@ -36,10 +37,10 @@ void selection_sort(int *array, size_t size)
  */
 void swap_int(int *array, size_t a, size_t b)
 {
-	int tmp;
+int tmp;
 
-	tmp = array[a];
+tmp = array[a];
 
-	array[a] = array[b];
-	array[b] = tmp;
+array[a] = array[b];
+array[b] = tmp;
 }
