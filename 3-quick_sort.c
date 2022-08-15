@@ -53,6 +53,7 @@ int partition(int beg, int pivot, int *i, size_t size)
 	int temp;
 
 	temp = beg;
+
 	while (temp != pivot)
 	{
 		if (i[temp] < i[pivot])
@@ -90,6 +91,7 @@ void swap_int(int *a, int *b)
 	int temp;
 
 	temp = *a;
+
 	*a = *b;
 	*b = temp;
 }
