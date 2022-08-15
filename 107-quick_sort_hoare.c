@@ -63,7 +63,7 @@ int hoare(int *array, int left, int right, size_t size)
 			;
 		if (i >= j)
 			break;
-		swap(array, &array[i], &array[j], size);
+		change(array, &array[i], &array[j], size);
 	}
 	return (i);
 }
