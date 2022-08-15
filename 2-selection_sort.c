@@ -29,15 +29,16 @@ void selection_sort(int *array, size_t size)
 }
 
 /**
- *  * swap_int - swap variable values
- *   * @array: array to use
- *    * @a: index 1
- *     * @b: index 2
- *     */
+ * swap_int - swap variable values
+ * @array: array to use
+ * @a: index 1
+ * @b: index 2
+ */
 void swap_int(int *array, size_t a, size_t b)
 {
 	int tmp;
 	tmp = array[a];
+
 	array[a] = array[b];
 	array[b] = tmp;
 }
