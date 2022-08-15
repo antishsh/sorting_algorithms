@@ -14,19 +14,18 @@ void selection_sort(int *array, size_t size)
 
 	for (i = 0; i <= size; i++)
 	{
-			jMin = i; /*consider the first element as min*/
-				for (j = i + 1; j < size; j++)
-						{
-									if (array[j] < array[jMin])
-													jMin = j;
-										}
-					if (jMin != i)
-							{
-										swap_int(array, i, jMin);
-												print_array(array, size);
-													}
+		jMin = i; /*consider the first element as min*/
+		for (j = i + 1; j < size; j++)
+		{
+			if (array[j] < array[jMin])
+				jMin = j;
+		}
+		if (jMin != i)
+		{
+			swap_int(array, i, jMin);
+			print_array(array, size);
+		}
 	}
-
 }
 
 /**
