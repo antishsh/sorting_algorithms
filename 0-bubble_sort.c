@@ -12,7 +12,7 @@ include "sort.h"
 	short int swapped;
 	int tmp;
 
-	do{
+	do {
 		swapped = 0;
 		for (i = 1; i < size; i++)
 		{
