@@ -24,7 +24,7 @@ void quick_sort(int *array, size_t size)
 * @pivot: end of divided array
 * @i: the beginning of the array
 * @size: size of array
-**/
+*/
 void divide(int beg, int pivot, int *i, size_t size)
 {
 	int first, second, np;
@@ -47,7 +47,7 @@ void divide(int beg, int pivot, int *i, size_t size)
 * @i: the beginning of array
 * @size: size of array
 * Return: the new beginning
-**/
+*/
 int partition(int beg, int pivot, int *i, size_t size)
 {
 	int temp;
